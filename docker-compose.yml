@@ -1,0 +1,12 @@
+services:
+  hello-server:
+    build: .
+    container_name: hello-server
+    restart: unless-stopped
+    networks: [web]
+    # No "ports:" - Caddy reaches this container over the shared web network,
+    # so nothing is published on the host.
+
+networks:
+  web:
+    external: true
