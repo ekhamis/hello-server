@@ -44,7 +44,7 @@ const page = () => `<!DOCTYPE html>
     <dt>Started</dt><dd>${started.toISOString().replace('T',' ').slice(0,19)} UTC</dd>
     <dt>Now</dt><dd>${new Date().toISOString().replace('T',' ').slice(0,19)} UTC</dd>
   </dl>
-  <footer>Pushed to GitHub, pulled and built on ekscserver, routed by Caddy.</footer>
+  <footer>Pushed to GitHub, pulled and built on ekscserver, routed by Caddy.<br>Deploy &#35;2 &mdash; proving the update loop.</footer>
 </main>
 </body>
 </html>`;
